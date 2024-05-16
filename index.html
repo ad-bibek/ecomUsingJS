@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        
+            <h2 id="page-heading" class="clickable-heading"><a href="#">FakeShop E-Commerce</a></h2>
+        
+        
+        <div class="search-bar"> 
+            <input type="text" id="search-input" placeholder="Search for products..."> 
+            
+            <button id="search-button">
+                
+                <img src="search-icon.png" alt="Search" class="search-icon">
+            </button>
+            <li style="display: inline"><a href="#">login</a></li>
+                <li style="display: inline"><a href="#">signup</a></li>
+            <li style="display: inline"><a href="#"><i class="fas fa-shopping-cart cart-icon"></i></a></li>
+
+        </div>
+    </header>
+    <main>
+        <div id="carousel" class="carousel"></div>
+        <div class="col-md-3 my-3">
+            <h2> Categories </h2>
+            <div class="filter-box">
+                <li><button class="btn btn-outline-dark m-1 btn-sm" onclick="filterProduct('women\'s clothing')">Women's Clothing</button></li><br>
+                <li><button class="btn btn-outline-dark m-1 btn-sm" onclick="filterProduct('men\'s clothing')">Men's Clothing</button></li><br>
+                <li><button class="btn btn-outline-dark m-1 btn-sm" onclick="filterProduct('jewelery')">Jewelery</button></li> <br>
+                <li><button class="btn btn-outline-dark m-1 btn-sm" onclick="filterProduct('electronics')">Electronics</button></li><br>
+                <li><button class="btn btn-outline-dark m-1 btn-sm" onclick="filterProduct('homeandlifestyle')">Home & Lifestyle</button></li><br>
+                <li><button class="btn btn-outline-dark m-1 btn-sm" onclick="filterProduct('healthandbeauty')">Health & Beauty</button></li><br>
+                <li><button class="btn btn-outline-dark m-1 btn-sm" onclick="filterProduct('motors&tools')">Motor and Tools</button></li><br>
+                
+            </div>
+        </div>
+        <div id="products-container"></div>
+    </main>
+    
+</div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; FakeShop. All rights reserved.</p>
+            <ul class="social-media">
+                <li><a href="#"><i class="fab fa-facebook">  facebook</i></a></li>
+                <li><a href="#"><i class="fab fa-twitter">  twitter</i></a></li>
+                <li><a href="#"><i class="fab fa-instagram">  instagram</i></a></li>
+                <li style="display: inline"><a href="#">Contact</a></li>
+                <li style="display: inline"><a href="#">About</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
