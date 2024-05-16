@@ -39,8 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Create a product element
     function createProductElement(product) {
-        // const productDiv = document.createElement('div');
-        // productDiv.classList.add('product', 'medium-card'); // Add a class for medium card style
+        const productDiv = document.createElement('div');
+        productDiv.classList.add('product', 'medium-card'); // Add a class for medium card style
     
         const productImg = document.createElement('img');
         productImg.src = product.image;
@@ -82,7 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return productDiv;
     }
     
-
     // Show product details in a modal using async/await
     async function showProductDetails(productId) {
         try {
@@ -116,18 +115,6 @@ document.addEventListener('DOMContentLoaded', () => {
         );
         displayProducts(filteredProducts);
     });
-
-    // Filter products by category
-    function filterProduct(category) {
-        if (category === 'all') {
-            displayProducts(allProducts);
-        } else {
-            const filteredProducts = allProducts.filter(product => 
-                product.category.toLowerCase() === category.toLowerCase()
-            );
-            displayProducts(filteredProducts);
-        }
-    }
 
     // Close the modal
     closeButton.addEventListener('click', () => {

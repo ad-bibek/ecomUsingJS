@@ -81,7 +81,20 @@ nav ul li a:hover {
     height: 20px;
 }
 
-/* Carousel Styles */
+.login-container {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Align items vertically center */
+}
+
+.login-container form,
+.login-container .additional-links {
+    margin-right: 10px; /* Adjust spacing between elements */
+}
+
+.login-container .additional-links a {
+    margin-left: 10px; /* Adjust spacing between the "signup" link and the shopping cart icon */
+}
+
 .carousel {
     display: flex;
     overflow-x: hidden;
@@ -101,7 +114,7 @@ nav ul li a:hover {
 }
 
 .carousel-item img {
-    width: 50%;
+    width: 100%;
     border-radius: 5px; /* Add border radius */
 }
 
